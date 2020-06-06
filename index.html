@@ -128,6 +128,288 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/06/06/leetcode-14/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="qianye">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QianYe">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/06/leetcode-14/" class="post-title-link" itemprop="url">每日python-Longest Common Prefix</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-06-06 23:10:22 / 修改时间：23:15:02" itemprop="dateCreated datePublished" datetime="2020-06-06T23:10:22+08:00">2020-06-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Longest-Common-Prefix"><a href="#Longest-Common-Prefix" class="headerlink" title="Longest Common Prefix"></a><a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank" rel="noopener">Longest Common Prefix</a></h2><p>Write a function to find the longest common prefix string amongst an array of strings.</p>
+<p>If there is no common prefix, return an empty string “”.</p>
+<p>Example 1:</p>
+<p>Input: [“flower”,”flow”,”flight”]<br>Output: “fl”<br>Example 2:</p>
+<p>Input: [“dog”,”racecar”,”car”]<br>Output: “”<br>Explanation: There is no common prefix among the input strings.<br>Note:</p>
+<p>All given inputs are in lowercase letters a-z.</p>
+<p>Example:</p>
+<p>Input: [1,8,6,2,5,4,8,3,7]<br>Output: 49</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>1.从strs中选出长度最短的str<br>2.遍历这个str，判断str[i]是否等于other[i](other为strs中的任一字符串)</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def longestCommonPrefix(self, strs):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type strs: List[str]</span><br><span class="line">        :rtype: str</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        if not strs:</span><br><span class="line">            return &quot;&quot;</span><br><span class="line">        shortest &#x3D; min(strs,key&#x3D;len)</span><br><span class="line">        for i, ch in enumerate(shortest):</span><br><span class="line">            for other in strs:</span><br><span class="line">                if other[i] !&#x3D; ch:</span><br><span class="line">                    return shortest[:i]</span><br><span class="line">        return shortest</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/06/06/leetcode-13/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="qianye">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QianYe">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/06/leetcode-13/" class="post-title-link" itemprop="url">每日python-Roman to Integer</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-06-06 22:50:03 / 修改时间：23:10:45" itemprop="dateCreated datePublished" datetime="2020-06-06T22:50:03+08:00">2020-06-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Roman-to-Integer"><a href="#Roman-to-Integer" class="headerlink" title="Roman to Integer"></a><a href="https://leetcode.com/problems/roman-to-integer/" target="_blank" rel="noopener">Roman to Integer</a></h2><p>Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.</p>
+<p>Symbol       Value<br>I             1<br>V             5<br>X             10<br>L             50<br>C             100<br>D             500<br>M             1000<br>For example, two is written as II in Roman numeral, just two one’s added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.</p>
+<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:</p>
+<p>I can be placed before V (5) and X (10) to make 4 and 9.<br>X can be placed before L (50) and C (100) to make 40 and 90.<br>C can be placed before D (500) and M (1000) to make 400 and 900.<br>Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.</p>
+<p>Example 1:</p>
+<p>Input: “III”<br>Output: 3<br>Example 2:</p>
+<p>Input: “IV”<br>Output: 4<br>Example 3:</p>
+<p>Input: “IX”<br>Output: 9<br>Example 4:</p>
+<p>Input: “LVIII”<br>Output: 58<br>Explanation: L = 50, V= 5, III = 3.<br>Example 5:</p>
+<p>Input: “MCMXCIV”<br>Output: 1994<br>Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>模拟即可</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def romanToInt(self, s: str) -&gt; int:</span><br><span class="line">        i, ans, l &#x3D; 0, 0, len(s)</span><br><span class="line">        rule &#x3D; &#123;&quot;M&quot;:1000, &quot;CM&quot;:900, &quot;D&quot;:500, &quot;CD&quot;:400, &quot;C&quot;:100, &quot;XC&quot;:90, &quot;L&quot;:50, &quot;XL&quot;:40, &quot;X&quot;:10, &quot;IX&quot;:9, &quot;V&quot;:5, &quot;IV&quot;:4, &quot;I&quot;:1&#125;</span><br><span class="line">        while i &lt; l:</span><br><span class="line">            if i + 1 &lt; l and s[i] + s[i + 1] in rule:</span><br><span class="line">                ans +&#x3D; rule[s[i] + s[i + 1]]</span><br><span class="line">                i +&#x3D; 2</span><br><span class="line">                continue</span><br><span class="line">            ans +&#x3D; rule[s[i]]</span><br><span class="line">            i +&#x3D; 1</span><br><span class="line">        return ans</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/06/05/leetcode-12/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="qianye">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QianYe">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/05/leetcode-12/" class="post-title-link" itemprop="url">每日python-Integer to Roman</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-05 20:50:53" itemprop="dateCreated datePublished" datetime="2020-06-05T20:50:53+08:00">2020-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 23:06:11" itemprop="dateModified" datetime="2020-06-06T23:06:11+08:00">2020-06-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Integer-to-Roman"><a href="#Integer-to-Roman" class="headerlink" title="Integer to Roman"></a><a href="https://leetcode.com/problems/integer-to-roman/" target="_blank" rel="noopener">Integer to Roman</a></h2><p>Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.</p>
+<p>Symbol       Value<br>I             1<br>V             5<br>X             10<br>L             50<br>C             100<br>D             500<br>M             1000<br>For example, two is written as II in Roman numeral, just two one’s added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.</p>
+<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:</p>
+<p>I can be placed before V (5) and X (10) to make 4 and 9.<br>X can be placed before L (50) and C (100) to make 40 and 90.<br>C can be placed before D (500) and M (1000) to make 400 and 900.<br>Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.</p>
+<p>Example 1:</p>
+<p>Input: 3<br>Output: “III”<br>Example 2:</p>
+<p>Input: 4<br>Output: “IV”<br>Example 3:</p>
+<p>Input: 9<br>Output: “IX”<br>Example 4:</p>
+<p>Input: 58<br>Output: “LVIII”<br>Explanation: L = 50, V = 5, III = 3.<br>Example 5:</p>
+<p>Input: 1994<br>Output: “MCMXCIV”<br>Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>模拟题意</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def intToRoman(self, num: int) -&gt; str:</span><br><span class="line">        ans &#x3D; &quot;&quot;</span><br><span class="line">        rule &#x3D; &#123;1000:&quot;M&quot;, 900:&quot;CM&quot;, 500:&quot;D&quot;, 400:&quot;CD&quot;, 100:&quot;C&quot;, 90:&quot;XC&quot;, 50:&quot;L&quot;, 40:&quot;XL&quot;, 10:&quot;X&quot;, 9:&quot;IX&quot;, 5:&quot;V&quot;, 4:&quot;IV&quot;, 1:&quot;I&quot;&#125;</span><br><span class="line">        for k, v in rule.items():</span><br><span class="line">            if num &gt;&#x3D; k: </span><br><span class="line">                ans +&#x3D; (num &#x2F;&#x2F; k) * v</span><br><span class="line">                num &#x3D; num % k</span><br><span class="line">                if num &#x3D;&#x3D; 0:</span><br><span class="line">                    break</span><br><span class="line">        return ans</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/06/05/leetcode-11/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="qianye">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QianYe">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/05/leetcode-11/" class="post-title-link" itemprop="url">每日python-Container With Most Water</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-05 20:30:53" itemprop="dateCreated datePublished" datetime="2020-06-05T20:30:53+08:00">2020-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-06 23:10:41" itemprop="dateModified" datetime="2020-06-06T23:10:41+08:00">2020-06-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Container-With-Most-Water"><a href="#Container-With-Most-Water" class="headerlink" title="Container With Most Water"></a><a href="https://leetcode.com/problems/container-with-most-water/" target="_blank" rel="noopener">Container With Most Water</a></h2><p>Given n non-negative integers a1, a2, …, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.</p>
+<p>Note: You may not slant the container and n is at least 2.</p>
+<p>The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.</p>
+<p>Example:</p>
+<p>Input: [1,8,6,2,5,4,8,3,7]<br>Output: 49</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>出题人真的nb，贪心思想的极致应用。<br>区域面积 = 长度*高度<br>先考量最长的情况，left = 0， right = len(height) - 1<br>如果height[left] &lt; height[right],那么left这根柱子是没有right这根柱子有“潜力”，所以left++，反之，right–</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def maxArea(self, height: List[int]) -&gt; int:</span><br><span class="line">        left, right &#x3D; 0, len(height) - 1</span><br><span class="line">        ans &#x3D; 0 </span><br><span class="line">        while left &lt; right:</span><br><span class="line">            ans &#x3D; max(ans, min(height[left], height[right]) * (right - left))</span><br><span class="line">            if height[left] &lt; height[right]:</span><br><span class="line">                left +&#x3D; 1</span><br><span class="line">            else:</span><br><span class="line">                right -&#x3D; 1</span><br><span class="line">        return ans</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/06/04/leetcode_9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -509,199 +791,11 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/06/01/leetcode_2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="qianye">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QianYe">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/01/leetcode_2/" class="post-title-link" itemprop="url">每日python-Add Two Numbers</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-06-01 19:48:35 / 修改时间：19:50:44" itemprop="dateCreated datePublished" datetime="2020-06-01T19:48:35+08:00">2020-06-01</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Add-Two-Numbers"><a href="#Add-Two-Numbers" class="headerlink" title="Add Two Numbers"></a><a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="noopener">Add Two Numbers</a></h2><p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
-<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
-<p>Example:</p>
-<p>Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)<br>Output: 7 -&gt; 0 -&gt; 8<br>Explanation: 342 + 465 = 807.</p>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>模拟加法</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"># Definition for singly-linked list.</span><br><span class="line"># class ListNode(object):</span><br><span class="line">#     def __init__(self, val&#x3D;0, next&#x3D;None):</span><br><span class="line">#         self.val &#x3D; val</span><br><span class="line">#         self.next &#x3D; next</span><br><span class="line">class Solution(object):</span><br><span class="line">    def addTwoNumbers(self, l1, l2):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type l1: ListNode</span><br><span class="line">        :type l2: ListNode</span><br><span class="line">        :rtype: ListNode</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        head &#x3D; ListNode(-1, None)</span><br><span class="line">        p &#x3D; head</span><br><span class="line">        carry &#x3D; 0</span><br><span class="line">        while l1 !&#x3D; None or l2 !&#x3D; None:</span><br><span class="line">            cur &#x3D; carry</span><br><span class="line">            if l1 !&#x3D; None :</span><br><span class="line">                cur +&#x3D; l1.val</span><br><span class="line">                l1 &#x3D; l1.next</span><br><span class="line">            if l2 !&#x3D; None:</span><br><span class="line">                cur +&#x3D; l2.val</span><br><span class="line">                l2 &#x3D; l2.next</span><br><span class="line">            p.next &#x3D; ListNode(cur % 10, None)</span><br><span class="line">            p &#x3D; p.next</span><br><span class="line">            carry &#x3D; cur &#x2F; 10</span><br><span class="line">        if carry !&#x3D; 0:</span><br><span class="line">            p.next &#x3D; ListNode(carry, None)</span><br><span class="line">        return head.next</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/05/23/CSAPP%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="qianye">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QianYe">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/23/CSAPP%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80/" class="post-title-link" itemprop="url">CSAPP读书笔记(一)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-23 20:17:11 / 修改时间：20:18:19" itemprop="dateCreated datePublished" datetime="2020-05-23T20:17:11+08:00">2020-05-23</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="第一个程序-hello-world"><a href="#第一个程序-hello-world" class="headerlink" title="第一个程序 hello,world"></a>第一个程序 hello,world</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    printf(&quot;hello, world&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;emmmm，经典的开篇程序，当然这里不是教你怎么写”hello,world”。平常写程序其实是把计算机当成了一个黑盒，在ide上一顿啪啪啪，然后运行，在终端看一下运行结果，至于程序是怎么表示和运行的就不得而知了。</p>
-<h3 id="程序的表示"><a href="#程序的表示" class="headerlink" title="程序的表示"></a>程序的表示</h3><p>&emsp;&emsp;不管是程序还是数据在计算机中都是用二进制表示的。程序和数据都由字符组成，如何将这些字符和二进制数建立映射关系，这就是编码负责干的事了。</p>
-<h3 id="程序是如何运行起来的"><a href="#程序是如何运行起来的" class="headerlink" title="程序是如何运行起来的"></a>程序是如何运行起来的</h3><p>&emsp;&emsp;搞清楚了程序的表示，我们现在来搞清楚这个hello,world程序是如何在计算机中运行起来的。<br><img src="https://upload-images.jianshu.io/upload_images/20063995-b39ef3656f5ee355.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片源自csapp"></p>
-<h3 id="cpu是如何执行二进制程序的"><a href="#cpu是如何执行二进制程序的" class="headerlink" title="cpu是如何执行二进制程序的"></a>cpu是如何执行二进制程序的</h3><p>码一下这个回答，<a href="https://www.zhihu.com/question/348237008" target="_blank" rel="noopener">cpu是怎么认识代码</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qianye97.github.io/2020/05/16/hello/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="qianye">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QianYe">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/16/hello/" class="post-title-link" itemprop="url">随风潜入夜，润物细无声</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-16 18:15:24" itemprop="dateCreated datePublished" datetime="2020-05-16T18:15:24+08:00">2020-05-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-17 19:52:51" itemprop="dateModified" datetime="2020-05-17T19:52:51+08:00">2020-05-17</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>&emsp;&emsp;大三的时候就有想着弄一个自己的博客网站写点东西，确实也付诸行动了，遗憾的是没有能坚持下来，希望这次可以坚持下来。写博客的主要目的的话是为了锻炼一下文笔，记录自己学过的东西，以及所思所想所感。不得不说github真的是良心软件，租服务器的钱都省了下来233333。当然hexo也很赞，让我专注内容创作而不是专注搭网站~</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -765,7 +859,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
